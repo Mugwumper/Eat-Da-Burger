@@ -1,7 +1,29 @@
+:root {
+  --main-bg-color:rgb(251, 250, 208); 
+  --lite-bg-color:rgb(253, 240, 168); 
+}
+
 li {
   padding: 5px;
   margin: 5px;
   background: #faebd7;
+}
+
+body {
+  background-color:  var(--main-bg-color);  
+}
+
+.panel-default {
+  background-color: var(--lite-bg-color);
+  padding: 7px;
+}
+
+h1, h2, h3 {
+  color: #ff0000;
+}
+
+#tagline {
+  color: rgb(238, 68, 68);
 }
 
 .label {
@@ -16,4 +38,10 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+.burgerrow {
+  margin: 10px;
+  border-bottom-style: solid;
+  border-color: red;
 }
