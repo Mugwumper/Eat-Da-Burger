@@ -3,7 +3,6 @@
     <div class="jumbotron">
         <h1>Eat Da Burger</h1>
         <p id="tagline">Make Burgers, Eat Burgers.</p>
-        <br>
         <img src="/assets/img/burger.png" alt="Burger Image">
         <span class="new-burger-span">
             <panel class="make-burger-panel">
@@ -27,13 +26,11 @@
             <div class="panel panel-default">
                 <div class="panel-heading" id="lefthead"><strong>Burgers - ready to eat!</strong></div>
                 <div class="panel-body">
-                    <ul>
                         {{#each burgers}}
                         {{#unless devoured}}
                         {{> burgers/burger-block}}
                         {{/unless}}
                         {{/each}}
-                    </ul>
                 </div>
             </div>
         </div>
@@ -42,13 +39,11 @@
             <div class="panel panel-default">
                 <div class="panel-heading" id="righthead"><strong>Devoured Burgers</strong></div>
                 <div class="panel-body">
-                    <ul>
                         {{#each burgers}}
                         {{#if devoured}}
                         <span> {{this.id}} - {{this.burger_name}}<br></span>
                         {{/if}}
                         {{/each}}
-                    </ul>
                 </div>
             </div>
         </div>

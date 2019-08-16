@@ -3,12 +3,6 @@
   --lite-bg-color:rgb(253, 240, 168); 
 }
 
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
-}
-
 body {
   background-color:  var(--main-bg-color);  
 }
@@ -18,8 +12,16 @@ body {
   padding: 7px;
 }
 
+.panel-heading {
+  background-color: var(--lite-bg-color);
+}
+
 h1, h2, h3 {
   color: #ff0000;
+}
+
+h1 {
+  font-size: 24px;
 }
 
 #tagline {
